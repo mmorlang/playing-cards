@@ -1,6 +1,7 @@
 package edu.cnm.deepdive;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Random;
 
 public class Shoe {
@@ -29,4 +30,11 @@ public class Shoe {
     }
   }
 
+  public void sort() {
+    Arrays.sort(cards);
+  }
+
+  public void sort(Comparator<Card> comparator) {
+    Arrays.sort(cards, comparator);
+  }
 }
